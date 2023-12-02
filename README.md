@@ -1,6 +1,6 @@
 # Overview
 
-Solution/resource/test for each day can be found in src/main/java/day<X> and the corresponding input in src/main/resources/day<x>.
+Solution/resource/test for each day can be found in src/main/java/day<X>, src/main/resources/day<x> and src/test/java/day<X>.
 
 # Day 1
 
