@@ -8,8 +8,8 @@ my approach to scan the line character by character, identifying both digits and
 
 # Day 2
 
-Add a Game class and Game.Draw record. Parsing is done by removing all spaces and spliting on ":" or "," 
+Added a Game class and Game.Draw record. Parsing is done by removing all spaces and spliting on ":" or "," 
 and using a RegEx to parse the count+color(e.g. "8red"). 
 Part 1 is just filtering the draws for any that exceeds the provided counts. Part 2 is just finding the max
-cound of each color in a Game.
+count of each color in a Game.
 
