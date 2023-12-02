@@ -1,7 +1,8 @@
 # Day 1
 
-I first took the approach of just removing all non digits from the string which worked well for part 1.
-For part 2 I 1st replaced all instances of the digit words with its digit equivalent, and then apply the part 1 solution.
-That didn't work input lines like "eightwo" which resulted in "8wo" instead of the desired "82". I then switched to 
-scanning the line character by character looking for digits and/or words.
+Initially, my strategy involved stripping all non-digits from the string, and this method proved effective for solving
+part 1 of the problem. However, when tackling part 2, I initially attempted to replace all occurrences of digit words
+with their numeric equivalents before applying the part 1 solution. This approach encountered challenges with input
+lines containing combinations like "eightwo," resulting in "8wo" rather than the intended "82." Then I modified
+my approach to scan the line character by character, identifying both digits and words.
 
