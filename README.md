@@ -1,3 +1,7 @@
+# Overview
+
+Solution/resource/test for each day can be found in src/main/java/day<X> and the corresponding input in src/main/resources/day<x>.
+
 # Day 1
 
 Initially, my strategy involved stripping all non-digits from the string, and this method proved effective for solving
