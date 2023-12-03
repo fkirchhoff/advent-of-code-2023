@@ -1,27 +1,24 @@
 # Overview
 
-Solution/resource/test for each day can be found in src/main/java/day<X>, src/main/resources/day<x> and src/test/java/day<X>.
+The project structure is organized as follows: solutions, resources, and tests for each day can be found in
+the `src/main/java/day<X>`, `src/main/resources/day<x>`, and `src/test/java/day<X>` directories, respectively.
 
-# Day 1
+## Day 1
 
-Initially, my strategy involved stripping all non-digits from the string, and this method proved effective for solving
-part 1 of the problem. However, when tackling part 2, I initially attempted to replace all occurrences of digit words
-with their numeric equivalents before applying the part 1 solution. This approach encountered challenges with input
-lines containing combinations like "eightwo," resulting in "8wo" rather than the intended "82." Then I modified
-my approach to scan the line character by character, identifying both digits and words.
+Initially, my strategy involved removing all non-digits from the string, which proved effective for solving part 1 of
+the problem. However, when addressing part 2, I encountered challenges with input lines containing combinations like "
+eightwo," resulting in "8wo" rather than the intended "82." To overcome this, I modified my approach to scan the line
+character by character, identifying both digits and words.
 
-# Day 2
+## Day 2
 
-Added a Game class and Game.Draw record. Parsing is done by removing all spaces and spliting on ":" or "," 
-and using a RegEx to parse the count+color(e.g. "8red"). 
-Part 1 is just filtering the draws for any that exceeds the provided counts. Part 2 is just finding the max
-count of each color in a Game.
+For Day 2, I introduced a `Game` class and a `Game.Draw` record. Parsing is achieved by removing all spaces, splitting
+on ":" or ",", and using a regex to parse the count + color (e.g., "8red"). Part 1 involves filtering draws that exceed
+the provided counts, while Part 2 focuses on finding the maximum count of each color in a game.
 
-# Day 3
+## Day 3
 
-I reused some "grid" related code from AOC 2022 Day 8 to print the grid. I used Engine, Part and Symbol classes.
-Once these classes are populated, solving the problem was straightforward. I got stuck on the parsing logic which 
-was a bit convoluted, but it worked (eventually, I had an off by one for the case where the line ends with a number)!
-While writing test for the parsing logic I relied on an alternate way to parse using regular expressions (RE). 
-Turns out that approach is much simpler/cleaner so my final version used REs.
-
+I reused some grid-related code from AOC 2022 Day 8 to print the grid, utilizing the `Engine`, `Part`, and `Symbol`
+classes. I got stuck because of an "off by one" error in the parsing logic. While writing tests for the parsing logic,
+I explored an alternative method using regular expressions (RE), which turned out to be simpler and cleaner. The final
+version of the code opted for this RE-based approach.
