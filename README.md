@@ -17,3 +17,9 @@ and using a RegEx to parse the count+color(e.g. "8red").
 Part 1 is just filtering the draws for any that exceeds the provided counts. Part 2 is just finding the max
 count of each color in a Game.
 
+# Day 3
+
+I reused some "grid" related code from AOC 2022 Day 8 to print the grid. I used Engine, Part and Symbol classes. 
+The parsing logic was a bit convoluted, but it worked! While writing test for the logic I relied on an alternate way 
+to parse using regular expressions (RE). That approach is much simpler so my final version used REs.
+
