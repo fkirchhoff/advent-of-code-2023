@@ -19,7 +19,9 @@ count of each color in a Game.
 
 # Day 3
 
-I reused some "grid" related code from AOC 2022 Day 8 to print the grid. I used Engine, Part and Symbol classes. 
-The parsing logic was a bit convoluted, but it worked! While writing test for the logic I relied on an alternate way 
-to parse using regular expressions (RE). That approach is much simpler so my final version used REs.
+I reused some "grid" related code from AOC 2022 Day 8 to print the grid. I used Engine, Part and Symbol classes.
+Once these classes are populated, solving the problem was straightforward. I got stuck on the parsing logic which 
+was a bit convoluted, but it worked (eventually, I had an off by one for the case where the line ends with a number)!
+While writing test for the parsing logic I relied on an alternate way to parse using regular expressions (RE). 
+Turns out that approach is much simpler/cleaner so my final version used REs.
 
