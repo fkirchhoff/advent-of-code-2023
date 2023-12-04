@@ -22,3 +22,8 @@ I reused some grid-related code from AOC 2022 Day 8 to print the grid, utilizing
 classes. I got stuck because of an "off by one" error in the parsing logic. While writing tests for the parsing logic,
 I explored an alternative method using regular expressions (RE), which turned out to be simpler and cleaner. The final
 version of the code opted for this RE-based approach.
+
+## Day 4
+
+I learned my lesson and used RegEx to parse the input :-). For part 1I used intersections of two `Set` to compute the winning numbers.
+For part 2 I used a simple array to keep track of the number of each card. 
